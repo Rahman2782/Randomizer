@@ -19,7 +19,15 @@ void randomize(int min, int max, int rolls) { //int randomizer
     displayResults(rollResults, rolls);
 }
 
-void randomize(vector<string>) { //letter randomizer
+void randomizer(const char* input) { 
+    size_t size(0);
+
+    while(input[size] != '\0') {
+        size++;
+    }
+    for (size_t i = size-1; i > 0; i++) {
+
+    }
 
 
 }

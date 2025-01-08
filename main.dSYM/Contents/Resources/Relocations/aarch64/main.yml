@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/ramen.ahmed/Desktop/IPC144_RE/Randomizer/main'
+binary-path:     '/Users/ramen.ahmed/Desktop/C++/Randomizer/main'
 relocations:     []
 ...
