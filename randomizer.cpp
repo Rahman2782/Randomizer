@@ -19,17 +19,20 @@ void randomize(int min, int max, int rolls) { //int randomizer
     displayResults(rollResults, rolls);
 }
 
-void randomizer(const char* input) { 
+void randomizer(char* input) { 
     size_t size(0);
 
     while(input[size] != '\0') {
         size++;
     }
-    for (size_t i = size-1; i > 0; i++) {
+    for (size_t i = size-1; i > 0; i--) {
 
+        int x = rand() % (i + 1);
+
+        char temp = input[i];
+        input[i] = input[x];
+        input[x] = temp;
     }
-
-
 }
 
 
@@ -44,6 +47,10 @@ void displayResults(int rollResults[], int rolls) {
             cout << rollResults[i] << " ";
         }
     cout << endl << endl;
+}
+
+void displayResults(const char* temp) {
+    
 }
 
 bool containsInts(const string& input) {
